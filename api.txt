@@ -1,0 +1,39 @@
+首页：http://mce.mogucdn.com/jsonp/multiget/3?pids=51822%2C51827%2C41119%2C51833%2C51836%2C4604&callback=jsonp51822_51827_41119_51833_51836_4604
+
+
+分类：http://mce.mogucdn.com/jsonp/multiget/3?pids=41789%2C4604&callback=jsonp41789_4604
+
+分类旁边：http://mce.mogujie.com/jsonp/makeup/3?pid=41888&_=1500888633455&callback=jsonp2
+
+安卓java 报名 APK
+ios  oc
+wp 
+1.阻止事件冒泡,使成为捕获型事件触发机制.
+	function stopBubble(e) { 
+//如果提供了事件对象，则这是一个非IE浏览器 
+if ( e && e.stopPropagation ) 
+    //因此它支持W3C的stopPropagation()方法 
+    e.stopPropagation(); 
+else
+    //否则，我们需要使用IE的方式来取消事件冒泡 
+    window.event.cancelBubble = true; 
+}
+ 
+2.当按键后,不希望按键继续传递给如HTML文本框对象时,可以取消返回值.即停止默认事件默认行为.
+
+	//阻止浏览器的默认行为 
+function stopDefault( e ) { 
+    //阻止默认浏览器动作(W3C) 
+    if ( e && e.preventDefault ) 
+        e.preventDefault(); 
+    //IE中阻止函数器默认动作的方式 
+    else
+        window.event.returnValue = false; 
+    return false; 
+}
+//禁止鼠标右键菜单
+document.oncontextmenu = function(e){
+return false;
+}
+https://list.mogujie.com/search?cKey=h5-cube&fcid=10062603&page=1&_version=1&pid=&q=&cpc_offset=0&_=1501144810553&callback=jsonp7
+https://list.mogujie.com/search?cKey=h5-cube&fcid=50005&page=1&_version=1&pid=&q=&cpc_offset=0&_=1501144875018&callback=jsonp9

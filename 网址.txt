@@ -1,0 +1,11 @@
+https://facebook.github.io/react-native/docs/android-setup.html react-native真机测试
+https://cn.vuejs.org/ vue学习
+https://vuex.vuejs.org/zh-cn/getting-started.html vuex学习 科学上网
+https://mint-ui.github.io/docs/#/zh-cn2 vue动画插件
+http://v3.bootcss.com/ cootcss插件
+http://nodejs.cn/api/ node.js学习
+http://www.bootcdn.cn/ cdn免费服务器
+http://www.swiper.com.cn swiper插件库 轮播较多
+zepto轻量的jq  主要用于移动端
+touch 手机触摸端
+http://iconfont.cn/manage/index?manage_type=myprojects&projectId=361443 小图标

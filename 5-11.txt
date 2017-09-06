@@ -1,0 +1,118 @@
+1.html基本结构     2.<!doctype html>表示什么意思     3.html语法
+4.三种样式表（标出）   5.css语法
+6.外部样式表导入的两种方法(说出区别)   7.文本溢出显示省略号...必备的声明（4条）
+8.最小高度兼容写法（2种）   9.高度塌陷的解决方式（3种）
+10.title和alt的区别    11.五大浏览器内核和代表作品
+12.background-repeat的属性值都有哪4个    13.定位属性的属性值（4个）
+14.如何设置一个元素高度为100%    
+15 .设置一个宽度100px；高度100px;的div，永远水平居中垂直中齐在浏览器中。
+16.css图片整合的优势     17.写出20个h5新增元素
+18.必填    19.表单字段集及标题    20.表单的组成（）（）（）  
+21.表格行分组（）（）（）22.设置一个元素高度为3像素  23.12pt等于多少px又等于多少em
+24.li的默认类型为（）  25.写出4个常见的内联元素（）（）（）（）
+26.设置一个元素为flex容器（）  27.让flex元素纵向排列（改变主轴方向）
+28.flex元素会默认换行么，为什么，怎么解决
+29.简述align-content和align-itmes和align-self和justify-content的区别
+30.rem,em,px,vh,vw的区别
+31.ie低版本盒模型和标准盒模型的区别
+32.flex:1;代表什么意思       33.一个div向左扭曲45度
+34.空单元格隐藏    35.表格标题   36.简述get和post的区别   37.简述bfc的概念  
+38.简述什么是置换元素  39.video都支持哪些格式  40.写一个3d圆柱
+
+  input.onclick = function (e) {
+            //事件兼容IE8
+            var evt = window.event || e;
+            
+            //键盘兼容
+            var keyCode = evt.which || evt.keyCode;
+            
+            //滚动条兼容
+            var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+            
+            //pageX兼容
+            var pageY = (document.documentElement.scrollTop || document.body.scrollTop) + evt.clientY;
+            
+            //阻止冒泡
+            if (evt.stopPropagation) {
+                evt.stopPropagation();                //高版本浏览器
+            } else {
+                evt.cancelBubble = true;   //IE8
+            }
+        }
+                
+                //事件绑定兼容
+                 function addEvent(obj, type, fn, flag) {
+                if (obj.addEventListener) {
+                    obj.addEventListener(type, fn, flag);
+                } else {
+                    obj.attachEvent("on" + type, fn);
+                    obj.setCapture(flag);
+                }
+            }
+                
+                
+                //解除监听事件
+                  var say = function () {
+                  alert("里面被点击了");
+                  obj.removeEventListener("click", say);
+                      }
+              obj.addEventListener("click", say);
+                
+                //解除附加事件
+                var say = function () {
+                alert("里面被点击了");
+                obj.detachEvent("onclick", say);
+                    }
+            obj.attachEvent("onclick", say);
+            
+            //获取样式封装
+                function getStyleAttr(obj,attr){
+                        if(obj.currentStyle){
+                                return currentStyle[attr];
+                        }else{
+                                return window.getComputedStyle(obj)[attr];
+                        }
+                }
+            
+            //消除div点击的冒泡事件
+                div.onmousedown = function(e){
+                        var evt = window.event || e;
+                        if(evt.stopPropagation){
+                                evt.stopPropagation();
+                        }else{
+                                evt.cancelBubble = true;
+                        }
+                }
+
+
+http://v.youku.com/v_show/id_XMjc1NzQ1NjM0NA====.html?refer=pc-sns-1&from=timeline&isappinstalled=0
+
+
+http://me.cztv.com/video-3575436.html 
+http://www.bilibili.com/video/av3589731/?from=search&seid=10527120810530183179
+http://www.bilibili.com/video/av4444826/?from=search&seid=7066008771656379716 斗地主分享视频
+
+http://stu.1000phone.net/student.php/Public/login 平教
+
+
+http://www.unjs.com/fanwenwang/ziliao/117027.html
+
+跟大家说几点经验1.在学习的时候一定要注意这几点，不会的一定要问明白，不管谁能让他教会你知识就是你的了，要学会让知识为我所用。在看书的时候一定要做好标记，特别是不懂的地方一定要标明是什么意思。
+http://www.gkstk.com/article/1428458411273.html
+2.在学习语言的时候一定要记住动手，不要只说不做，这样会行成眼高手低，不管什么样的程序都要亲手做过才能说会了，不要整天说我不会学不会，其实是你不想学，只是你下决心抄一个月程序，我保证我能有大的进步，其实当你抄到一周到两周的时候你就会特想抄，因为你会发现程序你能看懂了，能帮别人调程序了，有一种成就感呀！它会让你更加努力的去学习。
+
+3.再一点是我建议大家在上课的时候少看课本，课本要在下课的时候看特别是上课前一定要先看看课本，上课的时候呢就不要看了，不要老师讲到那个问题了你马上在书上找，这样不好，会影响你的注意力，其实还真不如注意听老师讲呢？因为你要是一边听一边看课本，你是看到了书上的答案但是老师的思路你没有听到，而要是你不看的话，你听明白了思路，一定是想迫切的看到结果，这个时候看课本才是记的最死的时候，学习要的是就是个效率吗
+
+
+
+4.提醒大家学习要讲效率，我发现有很多同学天天学习，每天最早到教室，走的又最晚，别人玩他在学，别人学他也学，可是别的一天30%的学习时间却比他们一天50%以上的学习时间的效率要高上不仅仅是几倍的问题，所以我要说的是不要对别人说你天天在学习，要说你天天在进步，学习不是要你学习了多久是，是要你学了多少东西的，你学一小时还没有别人学一分钟的效率高，难道自己不是浪费时间吗？不想学的时候就不要学，出去玩一会儿再来学说不定会有更好的效果。希望这些经验能跟大家分享一下，最后还是要跟大家强调一点，抄程序是学好C语言的最好最快的方法。
+
+https://github.com/wuxunxun007/zz-1703
+
+10.8.157.29
+
+http://isux.tencent.com/web-app-rem.html
+
+http://caibaojian.com/web-app-rem.html
+
+http://caibaojian.com/web-app-rem.html
